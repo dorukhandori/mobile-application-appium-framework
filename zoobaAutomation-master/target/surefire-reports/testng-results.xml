@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="1" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-09T20:00:17 TRT" name="Surefire suite" finished-at="2023-10-09T20:04:00 TRT" duration-ms="223192">
+    <groups>
+      <group name="Register">
+        <method signature="RegisterTests.registerWithGoogle(java.util.HashMap)[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" name="registerWithGoogle" class="org.RegressionTests.RegisterTests"/>
+        <method signature="RegisterTests.registerWithMobileNumber(java.util.HashMap)[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" name="registerWithMobileNumber" class="org.RegressionTests.RegisterTests"/>
+      </group> <!-- Register -->
+      <group name="Login">
+        <method signature="LoginTests.loginWithGoogle(java.util.HashMap)[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" name="loginWithGoogle" class="org.RegressionTests.LoginTests"/>
+        <method signature="LoginTests.loginWithMobileNumber(java.util.HashMap)[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" name="loginWithMobileNumber" class="org.RegressionTests.LoginTests"/>
+      </group> <!-- Login -->
+    </groups>
+    <test started-at="2023-10-09T20:00:17 TRT" name="Surefire test" finished-at="2023-10-09T20:04:00 TRT" duration-ms="223192">
+      <class name="org.RegressionTests.RegisterTests">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:00:17 TRT" name="ConfigureAppium" finished-at="2023-10-09T20:00:28 TRT" duration-ms="10948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="registerWithGoogle(java.util.HashMap)[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:00:28 TRT" name="registerWithGoogle" data-provider="registerData1" finished-at="2023-10-09T20:00:56 TRT" duration-ms="27982" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc.3131, emailaddress=zoobatester31@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for value to contain "Next". (tried for 5 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "Next". (tried for 5 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at org.zoobaApp.TestUtils.AndroidUtils.AndroidActions.waitForElementToAppear(AndroidActions.java:45)
+at org.zoobaApp.Pages.AndroidPages.LoginPage.registerWithGoogle(LoginPage.java:287)
+at org.RegressionTests.RegisterTests.registerWithGoogle(RegisterTests.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [875603d9-c963-4be3-b1ff-1e2296f8f20d, findElement {using=xpath, value=//android.widget.Button[@text='Next']}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 875603d9-c963-4be3-b1ff-1e2296f8f20d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.getAttribute(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.getAttributeOrCssValue(ExpectedConditions.java:1182)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$100(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$40.apply(ExpectedConditions.java:1130)
+at org.openqa.selenium.support.ui.ExpectedConditions$40.apply(ExpectedConditions.java:1127)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:00:56 TRT" name="tearDown" finished-at="2023-10-09T20:01:00 TRT" duration-ms="3610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:01:00 TRT" name="ConfigureAppium" finished-at="2023-10-09T20:01:09 TRT" duration-ms="9340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="registerWithMobileNumber(java.util.HashMap)[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:01:09 TRT" name="registerWithMobileNumber" data-provider="registerData0" finished-at="2023-10-09T20:02:00 TRT" duration-ms="51523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{lastnameinvalid=kk, password=Abc.3131, mobilenumber=+905433101898, mobilenumberinvalid=+90540189, emailaddressinvalid=dorukhan.ersoyleam, name=mfk, emailaddress=dorukhan.ersoyleyen+4@leanscale.com, passwordinvalid=abc, nameinvalid=mm, lastname=BABBA}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e534f12e-89fc-43e4-9f11-e386023563ad, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonVerify}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e534f12e-89fc-43e4-9f11-e386023563ad]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e534f12e-89fc-43e4-9f11-e386023563ad, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonVerify}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e534f12e-89fc-43e4-9f11-e386023563ad
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at org.zoobaApp.Pages.AndroidPages.LoginPage.clickVerify(LoginPage.java:233)
+at org.RegressionTests.RegisterTests.registerWithMobileNumber(RegisterTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- registerWithMobileNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.RegressionTests.RegisterTests@7c83dc97]" started-at="2023-10-09T20:02:00 TRT" name="tearDown" finished-at="2023-10-09T20:02:04 TRT" duration-ms="3993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.RegressionTests.RegisterTests -->
+      <class name="org.RegressionTests.LoginTests">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:02:47 TRT" name="ConfigureAppium" finished-at="2023-10-09T20:02:56 TRT" duration-ms="9698" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="loginWithGoogle(java.util.HashMap)[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:02:56 TRT" name="loginWithGoogle" data-provider="loginData1" finished-at="2023-10-09T20:03:07 TRT" duration-ms="10106" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc.3131, emailaddress=zoobatester32@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d1263c7b-1e71-47d6-a04a-a092861b2d11, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonLater}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d1263c7b-1e71-47d6-a04a-a092861b2d11]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d1263c7b-1e71-47d6-a04a-a092861b2d11, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonLater}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d1263c7b-1e71-47d6-a04a-a092861b2d11
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at org.zoobaApp.Pages.AndroidPages.OpeningPage.clickLater(OpeningPage.java:41)
+at org.RegressionTests.LoginTests.loginWithGoogle(LoginTests.java:37)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithGoogle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:03:07 TRT" name="tearDown" finished-at="2023-10-09T20:03:10 TRT" duration-ms="3743" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:03:10 TRT" name="ConfigureAppium" finished-at="2023-10-09T20:03:20 TRT" duration-ms="9753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="loginWithMobileNumber(java.util.HashMap)[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:03:20 TRT" name="loginWithMobileNumber" data-provider="loginData0" finished-at="2023-10-09T20:03:53 TRT" duration-ms="32686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Abc.123456, mobilenumber=+905433101870, passwordinvalid=abc, mobilenumberinvalid=+90540189}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithMobileNumber -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.RegressionTests.LoginTests@4a668b6e]" started-at="2023-10-09T20:03:53 TRT" name="tearDown" finished-at="2023-10-09T20:04:00 TRT" duration-ms="7136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.RegressionTests.LoginTests -->
+      <class name="org.RegressionTests.ForgotPasswordTest">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:org.RegressionTests.ForgotPasswordTest@4f67eb2a]" started-at="2023-10-09T20:02:04 TRT" name="ConfigureAppium" finished-at="2023-10-09T20:02:15 TRT" duration-ms="10138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method signature="forgotPassword(java.util.HashMap)[pri:0, instance:org.RegressionTests.ForgotPasswordTest@4f67eb2a]" started-at="2023-10-09T20:02:15 TRT" name="forgotPassword" data-provider="forgotPasswordData0" finished-at="2023-10-09T20:02:42 TRT" duration-ms="27801" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{mobilenumber=+905433101999}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [cac15722-a47a-4629-8ad0-5034155aaef4, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonSubmit}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cac15722-a47a-4629-8ad0-5034155aaef4]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [cac15722-a47a-4629-8ad0-5034155aaef4, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonSubmit}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cac15722-a47a-4629-8ad0-5034155aaef4
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy14.click(Unknown Source)
+at org.zoobaApp.Pages.AndroidPages.LoginPage.forgotPassword(LoginPage.java:314)
+at org.RegressionTests.ForgotPasswordTest.forgotPassword(ForgotPasswordTest.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:135)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:193)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:94)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:146)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- forgotPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.RegressionTests.ForgotPasswordTest@4f67eb2a]" started-at="2023-10-09T20:02:42 TRT" name="tearDown" finished-at="2023-10-09T20:02:47 TRT" duration-ms="4375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.RegressionTests.ForgotPasswordTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

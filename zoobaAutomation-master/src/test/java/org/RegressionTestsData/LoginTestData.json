@@ -1,0 +1,14 @@
+[
+
+  {
+    "mobilenumber": "+905433101870",
+    "password": "Abc.123456",
+    "mobilenumberinvalid": "+90540189",
+    "passwordinvalid": "abc"
+  },
+  {
+    "emailaddress": "zoobatester32@gmail.com",
+    "password": "Abc.3131"
+  }
+
+]

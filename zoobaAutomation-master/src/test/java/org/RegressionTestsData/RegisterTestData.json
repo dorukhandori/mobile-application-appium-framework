@@ -1,0 +1,20 @@
+[
+
+  {
+    "name":"mfk",
+    "lastname": "BABBA",
+    "mobilenumber": "+905433101898",
+    "emailaddress": "dorukhan.ersoyleyen+4@leanscale.com",
+    "password": "Abc.3131",
+    "nameinvalid":"mm",
+    "lastnameinvalid": "kk",
+    "mobilenumberinvalid": "+90540189",
+    "emailaddressinvalid": "dorukhan.ersoyleam",
+    "passwordinvalid": "abc"
+  },
+  {
+    "emailaddress": "zoobatester31@gmail.com",
+    "password": "Abc.3131"
+  }
+
+]

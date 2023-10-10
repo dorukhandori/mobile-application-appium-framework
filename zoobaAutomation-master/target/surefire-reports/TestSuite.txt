@@ -1,0 +1,54 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 224.028 s <<< FAILURE! - in TestSuite
+registerWithGoogle(org.RegressionTests.RegisterTests)  Time elapsed: 28.005 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for value to contain "Next". (tried for 5 second(s) with 500 milliseconds interval)
+	at org.RegressionTests.RegisterTests.registerWithGoogle(RegisterTests.java:60)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [875603d9-c963-4be3-b1ff-1e2296f8f20d, findElement {using=xpath, value=//android.widget.Button[@text='Next']}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 875603d9-c963-4be3-b1ff-1e2296f8f20d
+	at org.RegressionTests.RegisterTests.registerWithGoogle(RegisterTests.java:60)
+
+registerWithMobileNumber(org.RegressionTests.RegisterTests)  Time elapsed: 51.57 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [e534f12e-89fc-43e4-9f11-e386023563ad, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonVerify}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: e534f12e-89fc-43e4-9f11-e386023563ad
+	at org.RegressionTests.RegisterTests.registerWithMobileNumber(RegisterTests.java:37)
+
+forgotPassword(org.RegressionTests.ForgotPasswordTest)  Time elapsed: 27.81 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [cac15722-a47a-4629-8ad0-5034155aaef4, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonSubmit}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: cac15722-a47a-4629-8ad0-5034155aaef4
+	at org.RegressionTests.ForgotPasswordTest.forgotPassword(ForgotPasswordTest.java:22)
+
+loginWithGoogle(org.RegressionTests.LoginTests)  Time elapsed: 10.106 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+An element could not be located on the page using the given search parameters.
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.2.1', java.version: '11.0.17'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [d1263c7b-1e71-47d6-a04a-a092861b2d11, findElement {using=id, value=com.leanscale.dcafood.zoobaegypt.beta:id/buttonLater}]
+Capabilities {appium:app: /Users/dori/Downloads/zooba..., appium:appPackage: com.leanscale.dcafood.zooba..., appium:autoGrantPermissions: true, appium:automationName: UIAutomator2, appium:chromeOptions: {w3c: false}, appium:chromedriverExecutable: /Users/dori/Downloads/zooba..., appium:databaseEnabled: false, appium:desired: {app: /Users/dori/Downloads/zooba..., autoGrantPermissions: true, automationName: UIAutomator2, chromeOptions: {w3c: false}, chromedriverExecutable: /Users/dori/Downloads/zooba..., deviceName: PlayStore, platformName: ANDROID}, appium:deviceApiLevel: 33, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.75, appium:platformVersion: 13, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2148, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: d1263c7b-1e71-47d6-a04a-a092861b2d11
+	at org.RegressionTests.LoginTests.loginWithGoogle(LoginTests.java:37)
+

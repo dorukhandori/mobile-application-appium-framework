@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="org.RegressionTests.LoginTests">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="loginWithGoogle" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.RegressionTests.LoginTests -->
+      <class name="org.RegressionTests.ForgotPasswordTest">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="forgotPassword" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.RegressionTests.ForgotPasswordTest -->
+      <class name="org.RegressionTests.RegisterTests">
+        <methods>
+          <include name="ConfigureAppium"/>
+          <include name="registerWithMobileNumber" invocation-numbers="0"/>
+          <include name="registerWithGoogle" invocation-numbers="0"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.RegressionTests.RegisterTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->
